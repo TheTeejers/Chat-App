@@ -1,26 +1,65 @@
+// import React, { Component } from 'react';
+//
+// import { subscribeToTimer, getStock } from './api';
+//
+// class App extends Component {
+//   constructor(props) {
+//   super(props);
+//
+//   subscribeToTimer((err, timestamp) => this.setState({
+//     timestamp
+//   }));
+//
+//   getStock((err, message) => this.setState({
+//     message
+//   }));
+//
+//
+//   this.state = {
+//     timestamp: 'no timestamp yet',
+//     message: 'no message yet'
+//   };
+// }
+//
+//
+//
+//   render() {
+//     console.log(this.state.message);
+//     console.log(this.state.timestamp);
+//     return (
+//       <div className="App">
+//         <p className="App-intro">
+//           This is the timer value: {this.state.timestamp}
+//         </p>
+//         <p className="App-intro">
+//           This is the message value: {this.state.message}
+//         </p>
+//       </div>
+//     );
+//   }
+// }
+//
+// export default App;
+
+
 import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+
+import Layout from './components/Layouts';
+import './index.css'
+// import { subscribeToTimer, getStock } from './api';
 
 class App extends Component {
+
+
+
+
+
   render() {
+
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
-      </div>
+
+        <Layout title="Chat App" />
+
     );
   }
 }
