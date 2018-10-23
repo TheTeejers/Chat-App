@@ -1,4 +1,4 @@
-const express = require('expres')
+const express = require('express')
 const app = express()
 const server = require('http').createServer()
 const io = module.exports.io = require('socket.io')(server)
