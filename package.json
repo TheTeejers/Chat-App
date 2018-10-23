@@ -33,7 +33,7 @@
   "devDependencies": {
     "concurrently": "^4.0.1",
     "nodemon": "^1.18.4",
-    "gh-pages": "^1.2.0"
+    "gh-pages": "^2.0.1"
   },
   "browserslist": [
     ">0.2%",
