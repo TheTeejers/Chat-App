@@ -2,8 +2,10 @@
   "name": "socket-io",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://theteejers.github.io/",
   "dependencies": {
     "express": "^4.16.4",
+    "gh-pages": "^2.0.1",
     "heroku": "^7.18.3",
     "lodash": "^4.17.11",
     "react": "^16.5.2",
@@ -28,7 +30,8 @@
   },
   "devDependencies": {
     "concurrently": "^4.0.1",
-    "nodemon": "^1.18.4"
+    "nodemon": "^1.18.4",
+    "gh-pages": "^1.2.0"
   },
   "browserslist": [
     ">0.2%",
