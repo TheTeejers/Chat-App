@@ -12,15 +12,15 @@ export default class LoginForm extends Component {
       nickname:'',
       error:''
     }
-    this.handleSubmit=this.handleSubmit.bind(this);
+    // this.handleSubmit=this.handleSubmit.bind(this);
 }
   setUser = ({user, isUser})=>{
-    console.log(user, isUser);
+    // console.log(user, isUser);
     if(isUser){
       this.setError('User name Taken')
     } else {
-      this.props.setUser(user)
       this.setError('')
+      this.props.setUser(user)
     }
   }
 
