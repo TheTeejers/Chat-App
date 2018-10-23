@@ -1,26 +1,26 @@
-// const express = require('express')
-// const app = express()
-// const server = require('http').Server(app)
-// const io = module.exports.io = require('socket.io')(server)
-//
-// const PORT = process.env.PORT || 3231
-//
-// const SocketManager = require('./SocketManager')
-// app.use(express.static(__dirname + '/../../build'))
-// io.on('connection', SocketManager)
-//
-// server.listen(PORT, ()=>{
-//   console.log('Connected to port: ' + PORT)
-// })
+const express = require('express')
+const app = express()
+const server = require('http').Server(app)
+const io = module.exports.io = require('socket.io')(server)
 
-
-var app = require('express')();
-var http = require('http').Server(app);
-var io = module.exports.io = require('socket.io')(http);
 const PORT = process.env.PORT || 3231
-const SocketManager = require('./SocketManager')
 
-io.on('connection', SocketManager);
- http.listen(PORT, function(){
-  console.log('listening on *:' + PORT);
-});
+const SocketManager = require('./SocketManager')
+app.use(express.static(__dirname + '/../../build'))
+io.on('connection', SocketManager)
+
+server.listen(PORT, ()=>{
+  console.log('Connected to port: ' + PORT)
+})
+
+
+// var app = require('express')();
+// var http = require('http').Server(app);
+// var io = module.exports.io = require('socket.io')(http);
+// const PORT = process.env.PORT || 3231
+// const SocketManager = require('./SocketManager')
+//
+// io.on('connection', SocketManager);
+//  http.listen(PORT, function(){
+//   console.log('listening on *:' + PORT);
+// });
